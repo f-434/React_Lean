@@ -4,7 +4,7 @@ export const Welcome = (props) =>{
     console.log(props)
     return (
         <div id="container">
-            <h5>Welcome {props.name},age:{props.age}</h5>
+            <h2>Welcome {props.name},age:{props.age}</h2>
         </div>
     )
 }
@@ -15,7 +15,7 @@ export const WelcomeWithoutJSX = () =>{
         "div", 
         {id: "container"}, 
         React.createElement(
-            "h1",
+            "h2",
             null,
             "Welcome"
         )
