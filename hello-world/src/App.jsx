@@ -17,7 +17,12 @@ import { UserDetails } from "./UserDetails";
 import { ProductList } from "./ProductLists";
 import { NameList } from "./NameList";
 import { TodoList } from "./ToDoList";
-
+import { Alert } from "./Alert";
+import { NewButtom } from "./NewButtom";
+import { CustomButtom } from "./CustomButtom";
+import { NewsLetter } from "./NewsLetter";
+import { Contact } from "./Contact";
+import { Menu } from "./Menu";
 /**
  * Props（properties）
  * - 作用：父组件向子组件传递数据，可类比为函数参数。
@@ -54,6 +59,17 @@ function App() {
 
   return (
     <div>
+      <Menu />
+      <hr />
+      <Contact />
+      <NewsLetter />
+      <hr />
+      <CustomButtom />
+      <hr />
+      <Alert type="error">error!!!</Alert>
+      <Alert type="success">success!!!</Alert>
+      <NewButtom>Click Me !!!</NewButtom>
+      <hr />
       <TodoList />
       <hr />
       <NameList />
